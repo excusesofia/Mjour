@@ -4,16 +4,31 @@
   --color-glass: rgba(255, 255, 255, 0.1);
   --color-glass-border: rgba(255, 255, 255, 0.2);
   --blur-xs: 2px;
-  --font-angel: "AngelFont", cursive;
+    --font-angel: "AngelFont", cursive;
+  --font-desc: "DescriptionFont", sans-serif;
 }
 
 @utility super-glow {
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.2));
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) 
+          drop-shadow(0 0 30px rgba(255, 255, 255, 0.4)) 
+          drop-shadow(0 0 60px rgba(255, 255, 255, 0.2));
+}
+
+@utility hover-glow {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
 }
 
 @font-face {
   font-family: "AngelFont";
-  src: url("./assets/font/Respective.ttf") format("truetype");
+  src: url("./assets/font/Aston.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DescriptionFont";
+  src: url("./assets/font/Desc.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,5 +37,6 @@
 @layer base {
   body {
     @apply bg-[#050505] text-white antialiased;
+    scroll-behavior: smooth;
   }
 }

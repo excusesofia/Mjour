@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "@/components/desktop/NavbarDesktop";
-import { VscHome, VscArchive, VscAccount, VscSettingsGear } from "react-icons/vsc";
+import { VscHome, VscNotebook, VscChatSparkle, VscPerson } from "react-icons/vsc";
 
 const MainLayout = ({ children }) => {
   const navItems = [
     { icon: <VscHome size={20} />, label: "Home", onClick: () => console.log("Home") },
-    { icon: <VscArchive size={20} />, label: "Archive", onClick: () => console.log("Archive") },
-    { icon: <VscAccount size={20} />, label: "Profile", onClick: () => console.log("Profile") },
-    { icon: <VscSettingsGear size={20} />, label: "Settings", onClick: () => console.log("Settings") },
+    { icon: <VscPerson size={20} />, label: "Profile", onClick: () => console.log("Profile") },
+    { icon: <VscNotebook size={20} />, label: "Archive", onClick: () => console.log("Settings") },
+    { icon: <VscChatSparkle size={20} />, label: "Contact", onClick: () => console.log("Archive") },
   ];
 
   return (
