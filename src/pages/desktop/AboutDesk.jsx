@@ -23,12 +23,12 @@ const AboutSection = () => {
             className="absolute md:w-[700px] opacity-80 mix-blend-screen top-5 -left-10"
             alt="Sun"
           />
-          <img src={`${import.meta.env.BASE_URL}photo/catperson.png`} className="relative z-10 w-[250px] md:w-[600px] drop-shadow-2xl top-50" alt="Cat Person" />
+          <img src={`${import.meta.env.BASE_URL}photo/catperson.png`} className="relative z-10 w-[250px] md:w-[600px] drop-shadow-2xl -left-10 top-50" alt="Cat Person" />
         </motion.div>
 
         <div className="w-full md:w-1/2 text-right flex flex-col items-center">
           <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.8, delay: 0.2 }} className="mb-6">
-            <HoverTitle text="Ssup! Here I Am" className="font-angel md:text-5xl text-white super-glow" />
+            <HoverTitle text="Ssup! Here I Am" className="font-angel text-5xl text-white super-glow" />
           </motion.div>
 
           <motion.div
@@ -36,7 +36,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-desc md:text-3xl text-white/90 leading-relaxed tracking-normal"
+            className="font-desc text-3xl text-white/90 leading-relaxed tracking-normal"
           >
             <HoverText text={introText} className="justify-center uppercase" />
           </motion.div>
