@@ -5,7 +5,7 @@ import { HoverTitle } from "@/components/desktop/AnimaTitle";
 
 const AboutSection = () => {
   const introText =
-    "I’m Pey, so Welcome to my space, where I chronicle the milestones of mylife. Whether it be a small moment or a big bang, its all quite enchanting, as nothing here could have unfold nor flourish w/o the divine will of God.";
+    "I’m Pey, so Welcome to my space, where I chronicle the milestones of mylife.";
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden flex items-center justify-center px-6 md:px-24">
